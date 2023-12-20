@@ -14,10 +14,10 @@ public class LinearEq {
 
         System.out.println(a + " * x + " + b + " = " + c);
         if (x - (int) x == 0.0) {
-            System.out.println("X =  " + x);
+            System.out.println("X = " + x);
         }
         else {
-            System.out.println("x =  " + x);
+            System.out.println("x = " + x);
         }
     }
 }
