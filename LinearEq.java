@@ -7,8 +7,12 @@
 public class LinearEq {
 	public static void main(String[] args) {
         // given equation a * x + b = c, calculate the x and print it
-        double x = ( Double.parseDouble(args[2]) - Double.parseDouble(args[1])) / Double.parseDouble(args[0]);
+        double a = Double.parseDouble(args[0]);
+        double b = Double.parseDouble(args[1]);
+        double c = Double.parseDouble(args[2]);
+        double x = (c - b) / a;
 
+        System.err.println(a + " * x + " + b + " = " + c);
         System.out.println("x =  " + x);
     }
 }
