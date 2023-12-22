@@ -5,12 +5,20 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		double a = Double.parseDouble(args[0]), b = Double.parseDouble(args[1]), c = Double.parseDouble(args[2]);
-        if (a < b + c && b < a + c && c < a + b){
-        	System.out.println(args[0] + ", " + args[1] + ", " + args[2] + ": true");
-        }
-        else{
-        	System.out.println(args[0] + ", " + args[1] + ", " + args[2] + ": false");
+		// checking if args is greater than zero
+		if (args.length > 0) {
+			// putting the values of the sides in double variables
+			double a = Double.parseDouble(args[0]), b = Double.parseDouble(args[1]), c = Double.parseDouble(args[2]);
+
+			// checking f all the options are correct
+			if (a < b + c && b < a + c && c < a + b){
+				// printing true
+				System.out.println(args[0] + ", " + args[1] + ", " + args[2] + ": true");
+			}
+			else{
+				// printing false
+				System.out.println(args[0] + ", " + args[1] + ", " + args[2] + ": false");
+			}
         }	
 	}
 }

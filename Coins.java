@@ -4,9 +4,14 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		int quarters = Integer.parseInt(args[0]) / 25;
-        int cents = Integer.parseInt(args[0]) % 25;
+		// checking if args is greater than zero
+		if (args.length > 0) {
+			// putting the coins value into quaters and cents using dividing and modulo
+			int quarters = Integer.parseInt(args[0]) / 25;
+			int cents = Integer.parseInt(args[0]) % 25;
 
-        System.out.println("Use " + quarters + " quarters and " + cents + " cents");
+			// printing the quaters and the cents
+			System.out.println("Use " + quarters + " quarters and " + cents + " cents");
+		}
 	}
 }

@@ -6,13 +6,19 @@
  */
 public class LinearEq {
 	public static void main(String[] args) {
-        // given equation a * x + b = c, calculate the x and print it
-        double a = Double.parseDouble(args[0]);
-        double b = Double.parseDouble(args[1]);
-        double c = Double.parseDouble(args[2]);
-        double x = (c - b) / a;
+        // checking if args is greater than zero
+        if (args.length > 0) {
+            // putting the a, b and c in double variables
+            double a = Double.parseDouble(args[0]);
+            double b = Double.parseDouble(args[1]);
+            double c = Double.parseDouble(args[2]);
 
-        System.out.println(a + " * x + " + b + " = " + c);
-        System.out.println("x = " + x);
+            // calculating the value of x from the equation
+            double x = (c - b) / a;
+
+            //primting the equation and the value of x
+            System.out.println(a + " * x + " + b + " = " + c);
+            System.out.println("x = " + x);
+        }
     }
 }
